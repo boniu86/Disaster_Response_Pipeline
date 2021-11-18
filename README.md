@@ -6,8 +6,9 @@ Udacity data science nanodegree project 2
 1. [Libraries used](#Libraries)
 2. [Project Inspiration](#Inspiration)
 3. [File Descriptions](#files)
-4. [Data Insights](#Insights)
-5. [Licensing, Authors, and Acknowledgements](#licensing)
+4. [How to run this project](#run)
+5. [Data Insights](#Insights)
+6. [Licensing, Authors, and Acknowledgements](#licensing)
 
 
 ## Libraries used <a name="Libraries used"></a>
@@ -38,6 +39,30 @@ results in several categories.
 *__ML_Pipeline_Prepation.ipynb__* : serval time consuming ML algorithm process. After considering running time, I use AdaBoost instead of Random forest
 
 *__all.plk__* :  all the ML models I saved, there are 2 random forest model, 2 AdaBoost models
+
+
+## How to Run <a name="run"></a>
+
+1. The first part of your data pipeline is the Extract, Transform, and Load process. And run ML pipeline to get trained model saved in plk file
+```
+python data/process_data.py  --messages_filename 
+data/disaster_messages.csv --categories_filename 
+data/disaster_categories.csv --database_filename 
+data/DisasterResponse.db
+```
+
+```
+python models/train_classifier.py --database_filename 
+data/DisasterResponse.db --model_pickle_filename 
+models/classifier.pkl
+```
+
+2. Once your app is running 'python run.py', if not running, do this 'cd app' then 'python run.py'. 
+Then open another terminal and type 'env|grep WORK' this will give you the spaceid it will start with view*** and 
+some characters after that Now open your browser window and type https://viewa7a4999b-3001.udacity-student-workspaces.com, 
+replace the whole viewa7a4999b with your space id you got. Press enter and the app should now run for you
+
+
 
 ## Insights<a name="insights"></a>
 
