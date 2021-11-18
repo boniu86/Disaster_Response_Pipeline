@@ -31,8 +31,6 @@ results in several categories.
 
 *__models__* : saved model for web app and details of ML in train_classifier.py
 
-*__README.md__* : initial techinical README file for the project 
-
 *__asset__* : web app screenshot
 
 *__ETL_Pipeline_Prepation.ipynb__* : extract,transfer and load data. Prepared the data for ML analysis, saved data as database instead of csv.
