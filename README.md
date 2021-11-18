@@ -72,6 +72,8 @@ Result web app [here](https://view6914b2f4-3001.udacity-student-workspaces.com/)
 
 ![web app screenshot](asset/pic2.png)
 
+![web app screenshot](asset/pic3.png)
+
 
 ## Licensing, Authors, Acknowledgements<a name="licensing"></a>
 
