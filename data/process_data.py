@@ -57,7 +57,7 @@ def save_data(df, database_filename):
         database_filename (str): database filename
     '''
     engine = create_engine('sqlite:///'+ database_filename)
-    df.to_sql(TABLE_NAME, engine, index = False)  
+    df.to_sql(TABLE_NAME, engine, index = False, if_exists = 'replace' )  
 
 
 def parse_input_arguments():
