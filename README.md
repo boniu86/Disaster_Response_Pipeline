@@ -57,7 +57,7 @@ data/DisasterResponse.db --model_pickle_filename
 models/classifier.pkl
 ```
 
-2. Once your app is running 'python run.py', if not running, do this 'cd app' then 'python run.py'. 
+2. Once your app is running `python run.py` , if not running, do this `cd app`  then `python run.py`. 
 Then open another terminal and type 'env|grep WORK' this will give you the spaceid it will start with view*** and 
 some characters after that Now open your browser window and type https://viewa7a4999b-3001.udacity-student-workspaces.com, 
 replace the whole viewa7a4999b with your space id you got. Press enter and the app should now run for you
