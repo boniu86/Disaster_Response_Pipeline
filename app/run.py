@@ -43,7 +43,7 @@ def index():
     genre_counts = df.groupby('genre').count()['message']
     genre_names = list(genre_counts.index)
     
-    # Top five categories count
+    # Top 10 categories count
     top_category_count = df.iloc[:,4:].sum().sort_values(ascending=False)[1:11]
     top_category_names = list(top_category_count.index)
     # create visuals
@@ -77,7 +77,7 @@ def index():
             ],
 
             'layout': {
-                'title': 'Top Five Categories',
+                'title': 'Top 10 Categories',
                 'yaxis': {
                     'title': "Count"
                 },
